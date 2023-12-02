@@ -109,11 +109,13 @@ nav.navbar a, nav.navbar ul li a {
     font-weight: bold;
 }
 
-.navbar-nav a:hover {
+.navbar-nav a:hover,
+.navbar-nav a:focus {
     background-color: #799f38;
     border-radius: 5px;
     border-color: #000;
     color:#FFF;
+    transition: ease all 0.5s;
 }
 
 nav.navbar ul li {
@@ -1245,7 +1247,7 @@ p {
 
 }
 .log{
-    width: 250px;
+    width: 300px;
     height: auto;
 }
 
@@ -1271,3 +1273,4 @@ p {
     align-items: center;
     height: max-content;
 }
+
