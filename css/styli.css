@@ -234,7 +234,7 @@ button {
 }
 
 .logo2 {
-    display: block;
+    display: flex;
     max-width: 150px;
 }
 
@@ -243,15 +243,6 @@ button {
         width: 15%;
         float: left;
         display: flex;
-    }
-    .header_section {
-        width: 100%;
-        float: left;
-        background-image:none;
-        background-color: #fff;
-        height: auto;
-        background-size: 100%;
-        background-repeat: no-repeat;
     }
     .logo2 {
         display: none;
@@ -481,17 +472,7 @@ button {
 /* banner section end */
 
 
-/* about section start */
 
-.about_section {
-    width: 100%;
-    float: left;
-    background-color: #ffffff;
-    height: auto;
-    padding: 90px 0px;
-    position: relative;
-    z-index: -1;
-}
 
 .tree_icon {
     width: 100%;
@@ -502,37 +483,7 @@ button {
     margin-top: 100px;
 }
 
-.about_taital {
-    width: 70%;
-    float: left;
-    font-size: 50px;
-    color: #292c29;
-    font-weight: bold;
-    position: relative;
-    text-transform: uppercase;
-}
 
-.about_taital::after {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 10px;
-    background-color: #9ec12f;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    display: block;
-    border-radius: 100px;
-}
-
-.about_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #000;
-    margin: 0px;
-    padding-top: 30px;
-}
 
 .readmore_bt {
     width: 170px;
@@ -559,7 +510,6 @@ button {
 }
 
 
-/* about section end */
 
 
 /* gifts section end */
@@ -769,6 +719,40 @@ footer .item h4 {
     color: #ffff;
 }
 
+
+#navbar2 {
+    overflow: hidden;
+    background-color: #fff;
+    color: #000 !important;
+}
+
+#navbar2 a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar2 li a:hover {
+    color: #fff;
+    background-color: #9ec12f;
+}
+
+#navbar2 a img:hover {
+    background-color: #fff !important;
+}
+
+#navbar2 a.active {
+    color: #9ec12f;
+}
+
+#navbar2 li.active a {
+    color: #ffff;
+}
+
 .content {
     padding: 16px;
 }
@@ -942,49 +926,7 @@ margin: 1rem;
     justify-content: flex-end;
     margin-right: 8vw;
 }
-/** about section **/
 
-.about {
-    padding: 90px 0;
-}
-
-.about .titlepage {
-    text-align: center;
-}
-
-.about .titlepage p {
-    color: #000;
-}
-
-.about .about-box figure {
-    margin: 0;
-}
-
-.about .about-box figure img {
-    width: 50%;
-}
-
-.about .about-box h3 {
-    font-size: 30px;
-    line-height: 30px;
-    padding: 40px 10px 25px 10px;
-    color: #252525;
-    display: block;
-    font-weight: 500;
-}
-
-.about .about-box {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: #ddd 0px 0px 8px 1px;
-}
-
-.about .about-box p {
-    font-size: 17px;
-    line-height: 30px;
-    color: #252525;
-    padding: 0px 20px 50px 20px;
-}
 body {
     font-size: 1.1rem;
 }
@@ -1117,4 +1059,102 @@ header .container > div h1 {
 .men li a:hover {
     background: #9ec12f;
     color: #fff;
+}
+
+
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../imgs/loadi.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+/*about*/
+
+.about_section h3 {
+    font-size: 40px;
+    margin: 5px 0 25px 0;
+    font-weight: 600;
+}
+
+.about_section h4 {
+    color: #9ec12f;
+    font-size: 18px;
+    margin: 0;
+}
+/** about section **/
+
+.about {
+    padding: 90px 0;
+}
+
+.about .titlepage {
+    text-align: center;
+}
+
+.about .titlepage p {
+    color: #000;
+}
+
+.about .about-box figure {
+    margin: 0;
+}
+
+.about .about-box figure img {
+    width: 50%;
+}
+
+.about .about-box h3 {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 40px 10px 25px 10px;
+    color: #252525;
+    display: block;
+    font-weight: 500;
+}
+
+.about .about-box {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: #ddd 0px 0px 8px 1px;
+}
+
+.about .about-box p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #252525;
+    padding: 0px 20px 50px 20px;
+}
+
+.read_more {
+    font-size: 16px;
+    background-color: #9ec12f;
+    color: #fff;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 190px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+@media (max-width: 767px) {
+
+    .layout_padding {
+        padding: 50px 0;
+    }
+
+    .about_section h3 {
+        font-size: 30px;
+        margin: 10px 0 25px 0;
+        font-weight: 700;
+        line-height: 32px;
+    }
 }

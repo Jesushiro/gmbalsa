@@ -43,10 +43,10 @@
       <!-- header section start -->
       <div class="header_section">
          <div class="banner_section">
-            <div id="navbar" class="menu_main" >
+            <div id="navbar2" class="menu_main" >
          
                <div class="menu_right ">
-               <a class="logo2" href="index.html"><img src="../imgs/LOGO-GMBALSA.png"></a>
+               
                   <div class="costum_menu">
                      <ul>
                         <li class="active"><a href="index.html">Inicio</a></li>
@@ -101,6 +101,7 @@
         <!-- banner section start -->
         <div class="banner_section">
            <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="loader"></div>
               <div class="carousel-inner">
                  <div class="carousel-item active">
                     <img class="d-block w-100" src="../imgs/LOGO-GMBALSA-EDIT.svg" alt="slider_img">
@@ -137,33 +138,33 @@
            </div>
         </div>
         <!-- banner section end -->
-     </div>
+    
      <!-- header section start -->
      
       
 
-      
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-5">
-                  <h4>ABOUT</h4>
-                  <h3 style="text-transform: none !important">We Build for Your Comfort</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-               </div>
-               <div class="col-md-6 offset-md-1">
-                  <div class="full text_align_center">
-                     <img class="img-responsive" src="../imgs/balsawood.jpg" alt="#" />
-                  </div>
+     <br>
+     <div id="about" class="about_section layout_padding">
+      <div class="container">
+         <div class="row"><br><br>
+            <div class="col-md-5">
+               <h4>Empresa</h4>
+               <h3 style="text-transform: none !important">GM BALSA COMPOSITE S.A.</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-md-6 offset-md-1">
+               <div class="full text_align_center">
+                  <img class="img-responsive" src="../imgs/balsawood.jpg" alt="#" />
                </div>
             </div>
          </div>
       </div>
+   </div>
       
       <!--<div class="ver-todas">
          <a href="nosotros.html" class="boton boton-verde">Nosotros</a>
       </div>-->
-
+      
       <!-- productos  -->
       <div class="about">
          <div class="container">
@@ -270,7 +271,7 @@
                <div class="row ">
                   <div class="col-lg-4 col-md-6 col-12">
                      <div class="footer_blog_section">
-                        <img  src="../imgs/gmbalsa.png" alt="#" style="max-width: 300px;"/>
+                        <a href="../es/index.html"><img  src="../imgs/gmbalsa.png" alt="#" style="max-width: 300px;"/></a>
                         <p > <strong>Ing. Patricio Granja <br>Presidente CEO </strong></p><strong><p> GM BALSA COMPOSITE S.A. <br>RUC: 139 181 385 6001 </strong></p>
                      </div>
                   </div>
@@ -289,20 +290,20 @@
                         <div class="col-lg-6 col-md-6 col-12">
                            <div class="item3">
                               <ul style="text-align: left; padding-left: 20%; line-height: 2.5;">
-                                 <li><a href="https://wa.me/+593939940166?text="
+                                 <li><a href=""
                                     class="fa fa-phone "
-                                    target="_blank"></a>   <a href=""
+                                    target="_blank"></a>   <a href="https://wa.me/+593939940166?text="
                                     class="fa fa-whatsapp"
-                                    target="_blank"></a> +593 93 994 0166</li>
+                                    target="_blank">   +593 93 994 0166</a></li>
                                  <li><a href=""
                                     class="fa fa-phone"
                                     target="_blank"></a> +1 954 840 7070</li>
                                  <li><a href="mailto:pgranjam@gmbalsa.com"
                                     class="fa fa-envelope"
-                                    target="_blank" ></a>   pgranjam@gmbalsa.com <br> 
+                                    target="_blank" >   pgranjam@gmbalsa.com</a><br> 
                                     <a href="mailto:contablidad@gmbalsa.com"
                                     class="fa fa-envelope"
-                                    target="_blank" ></a>   contablidad@gmbalsa.com</li>
+                                    target="_blank" >   contablidad@gmbalsa.com</a></li>
                               </ul>
                            </div>
                         </div>
@@ -326,6 +327,12 @@
       <!-- sidebar -->
       <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="../js/custom.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script type="text/javascript">
+         $(window).load(function() {
+             $(".loader").fadeOut("slow");
+         });
+         </script>
       <script>
          if ( $(window).width() > 990) { 
          
